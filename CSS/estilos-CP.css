@@ -1,0 +1,139 @@
+/* Header (navbar) */
+header {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 20px;
+    background-color: #111; /* Fondo oscuro */
+    color: #FFD700; /* Texto dorado */
+}
+
+header h1 {
+    margin: 0; /* Elimina márgenes para que esté bien pegado al borde */
+}
+
+header a {
+    color: #FFD700; /* Color dorado para el enlace */
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Productos */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.producto {
+    border: 1px solid #FFD700;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #111;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.producto h3 {
+    margin: 10px 0 5px;
+}
+
+.producto p {
+    margin: 5px 0;
+}
+
+
+
+
+/* Footer */
+.footer {
+    background-color: #111; /* Fondo oscuro */
+    color: #FFD700; /* Color dorado para el texto */
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-links,
+.footer-socials {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff; /* Cambio de color al pasar el mouse */
+}
+
+.footer-socials a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.footer-socials .social-icon {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.footer-socials .social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #23272b;
+    padding: 10px 0;
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links,
+    .footer-socials {
+        flex: none;
+        margin: 10px 0;
+    }
+}
